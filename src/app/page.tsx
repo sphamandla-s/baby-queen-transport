@@ -1,5 +1,7 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import Team from "@/components/Team";
+import Values from "@/components/Values";
 
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
     <main className=" overflow-hidden">
       <Banner />
       <About />
+      <Values />
+      <Team />
     </main>
   );
 }

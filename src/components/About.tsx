@@ -16,15 +16,23 @@ export default function About() {
     ];
 
     return (
-        <section id='about' className='container mx-auto min-h-screen px-4 md:px-0 my-7'>
-            {/* <div className='text-center mb-10'>
-        <h2 className='text-3xl font-bold mb-4'>About Us</h2>
-      </div> */}
+        <section id='about' className='container mx-auto px-4 md:px-0 my-10'>
+          <div className='text-center mb-10 hidden md:block'>
+                <h2 className='text-[2.5rem] text-center leading-none  font-extrabold font-sans md:mx-auto md:text-5xl md:leading-tight mb-5 sm:text-center italic'>About Us.</h2>
+                <p className=' font-extralight text-center sm:text-center md:mx-auto max-w-[470px]'>Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+            </div>
             <div className='flex flex-col md:flex-row justify-between items-center'>
                 <div className='md:w-1/2'>
                     <h2 className='text-[2.5rem] text-center leading-none  font-extrabold font-sans md:mx-auto md:text-5xl md:leading-tight mb-5 sm:text-center xl:text-left'>
                         We’re changing the way people connect.
                     </h2>
+                    <p className='text-gray-600 text-center md:text-left'>
+                        Cupidatat minim id magna ipsum sint dolor qui. Sunt sit
+                        in quis cupidatat mollit aute velit. Et labore commodo
+                        nulla aliqua proident mollit ullamco exercitation tempor.
+                        Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum.
+                        Eu voluptate tempor esse minim amet fugiat veniam occaecat aliqua.!
+                    </p>
                     <p className='text-gray-600 text-center md:text-left'>
                         Cupidatat minim id magna ipsum sint dolor qui. Sunt sit
                         in quis cupidatat mollit aute velit. Et labore commodo
