@@ -81,7 +81,8 @@ export default function Banner() {
     });
 
     return (
-        <div id='#Home' className="bg-hero-bg bg-center bg-cover text-white min-h-screen overflow-hidden">
+        <div id='#Home' className="relative bg-hero-bg bg-center bg-cover text-white min-h-screen overflow-hidden">
+
             <header className="absolute inset-x-0 top-0 z-50">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
@@ -227,6 +228,17 @@ export default function Banner() {
                     />
                 </div>
             </div>
+            <svg
+                className="absolute inset-x-0 bottom-0"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                viewBox="0 0 1920 100"
+                preserveAspectRatio="none"
+            >
+                <path
+                    d="M0 100h1920V50C1625.54 0 1402.35 2.86 1181.25 36.16 983.66 64.4 792.71 99.94 589.72 99.94 379.14 99.94 122.8 0 0 50z"
+                ></path>
+            </svg>
         </div>
     )
 }
