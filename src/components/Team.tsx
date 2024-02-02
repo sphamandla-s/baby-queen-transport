@@ -1,12 +1,40 @@
-import React from 'react'
+const people = [
+    {
+        name: 'Bakhele Khumalo',
+        role: 'Founder / CEO',
+        imageUrl:
+            '/bakhele.jpg',
+        desc: "Bakhele's journey in the transportation industry spans over six years, where he honed his skills as a dedicated truck driver. Fueled by a passion for logistics and a vision to provide unparalleled service, he transitioned from the driver's seat to the helm of his own company. Bakhele's firsthand experience in the industry is the driving force behind Baby Queen Transport's dedication to understanding the unique needs of our clients."
+    },
+    // More people...
+]
 
 export default function Team() {
     return (
-        <section id='about' className='container mx-auto px-4 md:px-0 my-7'>
-            <div className='text-center mb-10'>
-                <h2 className='text-[2.5rem] text-center leading-none  font-extrabold font-sans md:mx-auto md:text-5xl md:leading-tight mb-5 sm:text-center italic'>Meet Our Team.</h2>
-                <p className=' font-extralight text-center sm:text-center md:mx-auto max-w-[470px]'>Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+        <div className="bg-white py-24 sm:py-32">
+            <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+                <div className="max-w-2xl">
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
+                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    With Bakhele's extensive background as a truck driver, we understand the industry from the ground up. This hands-on experience guides our approach to providing solutions tailored to your unique needs.                    </p>
+                </div>
+                <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                    {people.map((person) => (
+                        <li key={person.name}>
+                            <div className="flex items-center gap-x-6">
+                                <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                                <div>
+                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                                    <p className=" italic leading-6 text-gray-600">
+                                        "{person.desc}"
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
             </div>
-        </section>
+        </div>
     )
 }

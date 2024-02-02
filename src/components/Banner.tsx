@@ -81,7 +81,7 @@ export default function Banner() {
     });
 
     return (
-        <div id='#Home' className="relative bg-hero-bg bg-center bg-cover text-white min-h-screen overflow-hidden">
+        <section id='#Home' className="relative bg-hero-bg bg-center bg-cover text-white min-h-screen overflow-hidden">
 
             <header className="absolute inset-x-0 top-0 z-50">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -90,8 +90,8 @@ export default function Banner() {
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt=""
+                                src="/baby_queen-logo.png"
+                                alt="baby_queen-logo"
                             />
                         </a>
                     </div>
@@ -239,6 +239,6 @@ export default function Banner() {
                     d="M0 100h1920V50C1625.54 0 1402.35 2.86 1181.25 36.16 983.66 64.4 792.71 99.94 589.72 99.94 379.14 99.94 122.8 0 0 50z"
                 ></path>
             </svg>
-        </div>
+        </section>
     )
 }
