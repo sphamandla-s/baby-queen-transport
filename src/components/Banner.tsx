@@ -53,12 +53,12 @@ const navigation = [
         title: "About Us",
     },
     {
-        id: "services",
-        title: "Our Services",
+        id: "values",
+        title: "Values",
     },
     {
-        id: "contact",
-        title: "Contact Us",
+        id: "team",
+        title: "Our Team",
     },
 ];
 
@@ -81,7 +81,7 @@ export default function Banner() {
     });
 
     return (
-        <section id='#Home' className="relative bg-hero-bg bg-center bg-cover text-white min-h-screen overflow-hidden">
+        <section id='home' className="relative bg-hero-bg bg-center bg-cover text-white min-h-screen overflow-hidden">
 
             <header className="absolute inset-x-0 top-0 z-50">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -109,7 +109,7 @@ export default function Banner() {
                         {navigation.map((item, index) => (
                             <li
                                 key={item.id}
-                                className={`font-poppins font-medium cursor-pointer text-[16px] ${active === item.title ? "text-white" : "text-dimWhite"
+                                className={`font-poppins font-medium cursor-pointer text-[16px] ${active === item.title ? "text-indigo-600 font-bold" : "text-dimWhite"
                                     } ${index === navigation.length - 1 ? "mb-0" : "mb-4"}`}
                                 onClick={() => setActive(item.title)}
                             >
@@ -131,8 +131,8 @@ export default function Banner() {
                                 <span className="sr-only">Your Company</span>
                                 <img
                                     className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                    alt=""
+                                    src="/baby_queen-logo.png"
+                                alt="baby_queen-logo"
                                 />
                             </a>
                             <button
@@ -150,7 +150,7 @@ export default function Banner() {
                                     {navigation.map((item, index) => (
                                         <li
                                             key={item.id}
-                                            className={`font-poppins font-medium cursor-pointer text-[16px] ${active === item.title ? "text-white" : "text-dimWhite"
+                                            className={`font-poppins font-medium cursor-pointer text-[16px] ${active === item.title ? "text-indigo-600" : "text-dimWhite"
                                                 } ${index === navigation.length - 1 ? "mb-0" : "mb-4"}`}
                                             onClick={() => setActive(item.title)}
                                         >

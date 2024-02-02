@@ -22,7 +22,7 @@ export default function About() {
                 <p className=' font-extralight text-center sm:text-center md:mx-auto max-w-[470px]'>Striving for excellence is not just a goal; it's ingrained in our culture.</p>
             </div>
             <div className='flex flex-col md:flex-row justify-between items-center'>
-                <div className='md:w-1/2'>
+                <div className='md:w-1/2 md:mr-5'>
                     <h2 className='text-[2.5rem] text-center leading-none  font-extrabold font-sans md:mx-auto md:text-5xl md:leading-tight mb-5 sm:text-center xl:text-left'>
                         We’re changing the way people connect.
                     </h2>
@@ -48,7 +48,7 @@ export default function About() {
 
                     </p>
                 </div>
-                <div className='md:w-1/2 mt-6 md:mt-0'>
+                <div className='md:w-1/2 mt-6 md:mt-0  md:ml-5'>
                     <div className='grid grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center'>
                         <div className=' grid grid-cols-1'>
                             <img className='h-full w-full rounded-lg' src={'/wolfgang-hasselmann-nbRgZltoOck-unsplash.jpg'} alt='' />
